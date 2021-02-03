@@ -140,13 +140,13 @@ You've now finished configuring your IoT Central application to enable an IoT Ed
 
 Follow this document to install and provision Edge for Linux on a windows device. 
 
-> [!NOTE]
+> 
 > You are not required to create an IoTHub with this tutorial. When you go thru the steps from the doc below skip the step of creating IoT Hub since you will connecting to IoT Central. 
 
 [Install and provision Azure IoT Edge for Linux on a Windows device](https://docs.microsoft.com/en-us/azure/iot-edge/how-to-install-iot-edge-on-windows?view=iotedge-2018-06&tabs=windowsadmincenter)
 
-> [!NOTE]
-> For this tutorial pick **option 2** to provision your device, Provisioning via DPS using symmetric keys. Provide the **scope ID**, **registration ID** and the **primary key** you captured in previous steps. 
+
+For this tutorial pick **option 2** to provision your device, Provisioning via DPS using symmetric keys. Provide the **scope ID**, **registration ID** and the **primary key** you captured in previous steps. 
 
  ```azurepowershell-interactive
    Provision-EflowVm -provisioningType symmetric -​scopeId <ID_SCOPE_HERE> -registrationId <REGISTRATION_ID_HERE> -symmKey <PRIMARY_KEY_HERE>
